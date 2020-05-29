@@ -2,7 +2,7 @@ name: flutter_countryselector
 description: Flutter版的国家选择器。
 version: 0.0.1
 author: VincentTung
-homepage:
+homepage: https://github.com/VincentTung1/flutter_countryselector
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
