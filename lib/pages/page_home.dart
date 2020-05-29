@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_countryselector/manager/country_selector_manager.dart';
 import 'package:flutter_countryselector/pages/page_country_selector.dart';
 
 class HomePage extends StatefulWidget {
@@ -34,7 +35,8 @@ class _HomePageState extends State<HomePage> {
                         
                      onPressed: () async{
 
-                       var data = await Navigator.of(context).push(MaterialPageRoute(builder: (context) => CountrySelectorPage()));
+//                       var data = await Navigator.of(context).push(MaterialPageRoute(builder: (context) => CountrySelectorPage()));
+                       var data = await CountrySelectorManager.get().push(context);
 
                        name = data['name'];
 
