@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_countryselector/flutter_countryselector.dart';
+import 'package:flutter_countryselector/pages/page_home.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,14 +44,16 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
-        ),
-      ),
+//      home: Scaffold(
+//        appBar: AppBar(
+//          title: const Text('Plugin example app'),
+//        ),
+//        body: Center(
+//          child: Text('Running on: $_platformVersion\n'),
+//        ),
+//      ),
+
+       home: HomePage(),
     );
   }
 }

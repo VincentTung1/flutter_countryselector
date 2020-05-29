@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_countryselector/entity/Country.dart';
 import 'package:lpinyin/lpinyin.dart';
 
@@ -145,7 +146,7 @@ class _CountrySelectorPageState extends State<CountrySelectorPage> {
 
   Future<List<Widget>> _getCountrys() async{
 
-    var countryStr = await DefaultAssetBundle.of(context).loadString('assets/code.json');
+    var countryStr = await rootBundle.loadString('packages/flutter_countryselector/assets/code.json');
 
     List<dynamic> data = await json.decode(countryStr);
 
